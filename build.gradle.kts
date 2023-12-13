@@ -20,10 +20,6 @@ group = "com.attiead.teacher"
 version = Constant.VERSION
 java.sourceCompatibility = JavaVersion.toVersion(Dependency.targetJvmVersion)
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_21
-}
-
 repositories {
     maven(uri("https://jitpack.io"))
     mavenCentral()
