@@ -42,8 +42,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-undertow")
 
     // JPA
-//    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-//    implementation("mysql:mysql-connector-java:${Dependency.mySQLConnectorVersion}")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("mysql:mysql-connector-java:${Dependency.mySQLConnectorVersion}")
 
     // Validator
     implementation("org.hibernate.validator:hibernate-validator:${Dependency.hibernateValidatorVersion}")
