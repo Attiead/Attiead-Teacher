@@ -1,4 +1,4 @@
-package com.attiead.teacher.attieadteacher
+package com.attiead.teacher
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

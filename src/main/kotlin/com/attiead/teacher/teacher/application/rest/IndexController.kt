@@ -1,6 +1,6 @@
-package com.attiead.teacher.attieadteacher.teacher
+package com.attiead.teacher.teacher.application.rest
 
-import com.attiead.teacher.attieadteacher.common.constant.VERSION
+import com.attiead.teacher.common.constant.VERSION
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
