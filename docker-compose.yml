@@ -2,13 +2,13 @@ version: "3"
 services:
   database:
     image: mysql
-    container_name: article-service-mysql-db
+    container_name: teacher-service-mysql-db
     environment:
-      - MYSQL_DATABASE=article-service
+      - MYSQL_DATABASE=teacher-service
       - MYSQL_ROOT_HOST=%
       - MYSQL_ROOT_PASSWORD=1234
     ports:
-      - 3306:3306
+      - 3308:3306
     volumes:
       - ./db/data:/var/lib/mysql
 

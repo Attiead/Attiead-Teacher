@@ -1,5 +1,5 @@
 object Dependency {
-    const val targetJvmVersion = "17"
+    const val targetJvmVersion = "21"
     const val kotlinVersion = "1.9.21"
     const val springBootVersion = "3.2.0"
     const val springCloudVersion = "2023.0.0"
