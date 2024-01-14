@@ -14,7 +14,4 @@ class TeacherCertificate(
     @Column(name = "certificate_id")
     val certificateId: String,
 
-) : BaseEntity() {
-
-
-}
+) : BaseEntity()

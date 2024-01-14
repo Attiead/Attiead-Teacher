@@ -14,7 +14,4 @@ class Certificate(
     @Column(name = "file_path")
     val filePath: String? = null,
 
-) : BaseEntity() {
-
-}
-
+) : BaseEntity()

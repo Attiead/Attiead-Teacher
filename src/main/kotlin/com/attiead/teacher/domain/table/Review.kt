@@ -5,7 +5,6 @@ import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
-
 @Entity
 @Table(name = "review")
 class Review(
@@ -14,6 +13,4 @@ class Review(
 
     @Column(name = "comment")
     val comment: String? = null,
-) : BaseEntity() {
-
-}
+) : BaseEntity()

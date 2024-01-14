@@ -6,7 +6,4 @@ enum class Location {
     YONGIN,
     SUNGNAM,
     INCHEON,
-
-
-
 }

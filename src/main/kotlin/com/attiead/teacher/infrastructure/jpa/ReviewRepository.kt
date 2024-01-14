@@ -5,5 +5,4 @@ import com.attiead.teacher.domain.table.Review
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface ReviewRepository :
-    JpaRepository<Review, ID>  {
-}
+    JpaRepository<Review, ID>

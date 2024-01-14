@@ -5,5 +5,4 @@ import com.attiead.teacher.domain.table.Certificate
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface CertificateRepository :
-    JpaRepository<Certificate, ID>{
-}
+    JpaRepository<Certificate, ID>

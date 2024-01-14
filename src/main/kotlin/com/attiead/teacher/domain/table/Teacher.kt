@@ -12,7 +12,6 @@ import jakarta.persistence.Enumerated
 import jakarta.persistence.Table
 import java.util.UUID
 
-
 @Entity
 @Table(name = "teachers")
 class Teacher(
@@ -52,6 +51,4 @@ class Teacher(
     @Column(name = "percentOfCompletion")
     val percentOfCompletion: Int = 0,
 
-) : BaseEntity() {
-
-}
+) : BaseEntity()

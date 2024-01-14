@@ -5,5 +5,4 @@ import com.attiead.teacher.domain.table.Teacher
 import org.springframework.data.jpa.repository.JpaRepository
 
 interface TeacherRepository :
-    JpaRepository<Teacher, ID>  {
-}
+    JpaRepository<Teacher, ID>

@@ -5,7 +5,6 @@ import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
-
 @Entity
 @Table(name = "teacher_review")
 class TeacherReview(
@@ -15,6 +14,4 @@ class TeacherReview(
     @Column(name = "review_id")
     val reviewId: String,
 
-) : BaseEntity() {
-
-}
+) : BaseEntity()
