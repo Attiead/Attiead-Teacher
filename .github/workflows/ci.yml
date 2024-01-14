@@ -7,55 +7,36 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
-      - name: Set up JDK
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'temurin'
-          java-version: '17'
 
-      - uses: burrunan/gradle-cache-action@v1
-        name: Cache .gradle
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '21'
+          cache: 'gradle'
 
       - name: Build
-        run: ./gradlew -s build -x test
+        run: ./gradlew -s build --stacktrace --no-daemon
 
   lint:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true
       - name: Set up JDK
-        uses: actions/setup-java@v2
+        uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Validate Gradle wrapper
-        uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
-
-      - uses: burrunan/gradle-cache-action@v1
-        name: Cache .gradle
+          distribution: 'zulu'
+          java-version: '21'
+          cache: 'gradle'
 
       - name: Lint
         run: |
-          ./gradlew detekt
-
-  test:
-    runs-on: ubuntu-latest
-    environment: test
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: Set up JDK
-        uses: actions/setup-java@v2
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-      - uses: burrunan/gradle-cache-action@v1
-        name: Cache .gradle
+          ./gradlew detekt --no-daemon
