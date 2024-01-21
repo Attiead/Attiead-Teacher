@@ -6,11 +6,8 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "certificate")
+@Table(name = "certificates")
 class Certificate(
-    @Column(name = "server_file_name")
-    val serverFileName: String? = null,
-
     @Column(name = "file_path")
     val filePath: String? = null,
 

@@ -6,7 +6,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "teachers_certificate")
+@Table(name = "teachers_certificates")
 class TeacherCertificate(
     @Column(name = "teacher_id")
     val teacherId: String,

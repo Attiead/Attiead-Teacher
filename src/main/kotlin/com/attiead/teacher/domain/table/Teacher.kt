@@ -21,13 +21,13 @@ class Teacher(
     @Column(name = "tid")
     val tid: String = UUID.randomUUID().toString(),
 
-    @Column(name = "profileImagePath")
-    val profileImagePath: String? = null,
+    @Column(name = "profile_image_file_path")
+    val profileImageFilePath: String? = null,
 
     @Column(name = "university")
     val university: String,
 
-    @Column(name = "major")
+    @Enumerated(EnumType.STRING)
     val major: Major = Major.ETC,
 
     @Enumerated(EnumType.STRING)
@@ -36,8 +36,8 @@ class Teacher(
     @Enumerated(EnumType.STRING)
     val graduateStatus: GraduateStatus = GraduateStatus.GRADUATED,
 
-    @Column(name = "portfolioPath")
-    val portfolioPath: String? = null,
+    @Column(name = "portfolio_file_path")
+    val portfolioFilePath: String? = null,
 
     @Column(name = "introduce")
     val introduce: String? = null,
@@ -45,10 +45,10 @@ class Teacher(
     @Column(name = "career")
     val career: Int = 0,
 
-    @Column(name = "location")
+    @Enumerated(EnumType.STRING)
     val location: Location = Location.SEOUL,
 
-    @Column(name = "percentOfCompletion")
+    @Column(name = "percent_of_completion")
     val percentOfCompletion: Int = 0,
 
 ) : BaseEntity()

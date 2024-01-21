@@ -6,7 +6,7 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Table
 
 @Entity
-@Table(name = "review")
+@Table(name = "reviews")
 class Review(
     @Column(name = "score")
     val score: Int = 0,
