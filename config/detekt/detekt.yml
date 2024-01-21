@@ -817,8 +817,8 @@ formatting:
     active: true
     autoCorrect: true
   NoEmptyClassBody:
-    active: true
-    autoCorrect: true
+    active: false
+    autoCorrect: false
   NoEmptyFirstLineInMethodBlock:
     active: true
     autoCorrect: true
