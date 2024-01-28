@@ -55,5 +55,4 @@ class Teacher(
     @Column(name = "percent_of_completion")
     var percentOfCompletion: Int = 6,
 
-) : BaseEntity() {
-}
+) : BaseEntity()

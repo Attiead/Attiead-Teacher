@@ -26,5 +26,4 @@ class TeacherCreateController(
 
         return ResponseDTO.success()
     }
-
 }

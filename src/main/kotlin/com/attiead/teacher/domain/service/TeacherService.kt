@@ -12,5 +12,4 @@ class TeacherService(
     override fun register(teacher: Teacher) {
         teacherRepository.save(teacher)
     }
-
 }

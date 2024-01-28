@@ -8,7 +8,7 @@ import com.attiead.teacher.domain.vo.Subject
 import jakarta.validation.constraints.NotBlank
 import jakarta.validation.constraints.NotNull
 
-data class RequestCreateTeacherDTO (
+data class RequestCreateTeacherDTO(
     @field:NotBlank
     val uid: String,
     val profileImageFilePath: String?,
