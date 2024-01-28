@@ -96,8 +96,8 @@ class GlobalExceptionHandler {
 
         val dto = ResponseDTO(
             meta = Meta(
-                code = dtoMetaCode,
-                type = dtoMetaCode.name,
+                code = dtoMetaCode.name,
+                type = dtoMetaCode,
                 message = message
             ),
             data = data

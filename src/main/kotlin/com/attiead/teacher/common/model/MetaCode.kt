@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus
 
 const val DEFAULT_META_CODE = "00000"
 
-enum class MetaCode(private var code: String) {
+enum class MetaCode(val code: String) {
     SUCCESS("20000000"),
     CREATED("20100000"),
     ACCEPTED("20200000"),
