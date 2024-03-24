@@ -17,7 +17,7 @@ class TeacherApplicationService(
     ) {
         userClient.checkExistUser(requestCreateTeacherDTO.uid)
 
-        val teacher = TeacherEntityMapper.INSTANCE.toTeacherEntity(requestCreateTeacherDTO)
+        val teacher = TeacherEntityMapper.INSTANCE.convertToTeacherEntity(requestCreateTeacherDTO)
         teacherCrudService.register(teacher)
     }
 }

@@ -43,10 +43,10 @@ class Teacher(
     val portfolioFilePath: String? = null,
 
     @Column(name = "introduce")
-    val introduce: String? = null,
+    val introduceContents: String? = null,
 
     @Column(name = "career")
-    val career: Int = 0,
+    val yearsOfCareer: Int = 0,
 
     @Column(name = "location")
     @Enumerated(EnumType.STRING)

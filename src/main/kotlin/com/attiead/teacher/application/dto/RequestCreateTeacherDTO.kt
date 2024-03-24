@@ -20,9 +20,9 @@ data class RequestCreateTeacherDTO(
     @field:NotNull
     val graduateStatus: GraduateStatus,
     val portfolioFilePath: String?,
-    val introduce: String?,
+    val introduceContents: String?,
     @field:NotNull
-    val career: Int,
+    val yearOfCareer: Int,
     @field:NotNull
     val location: Location,
 )

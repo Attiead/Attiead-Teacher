@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/api/v1/teacher")
+@RequestMapping("/api/v1/teachers")
 class TeacherCreateController(
     private val teacherApplicationService: TeacherApplicationService
 ) {
