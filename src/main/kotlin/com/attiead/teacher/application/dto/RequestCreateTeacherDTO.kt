@@ -1,6 +1,5 @@
 package com.attiead.teacher.application.dto
 
-import com.attiead.teacher.domain.table.Teacher
 import com.attiead.teacher.domain.vo.GraduateStatus
 import com.attiead.teacher.domain.vo.Location
 import com.attiead.teacher.domain.vo.Major
@@ -26,20 +25,4 @@ data class RequestCreateTeacherDTO(
     val career: Int,
     @field:NotNull
     val location: Location,
-) {
-
-    fun toEntity(): Teacher {
-        return Teacher(
-            uid = uid,
-            profileImageFilePath = profileImageFilePath ?: "",
-            university = university,
-            major = major,
-            subject = subject,
-            graduateStatus = graduateStatus,
-            portfolioFilePath = portfolioFilePath ?: "",
-            introduce = introduce ?: "",
-            career = career,
-            location = location
-        )
-    }
-}
+)
