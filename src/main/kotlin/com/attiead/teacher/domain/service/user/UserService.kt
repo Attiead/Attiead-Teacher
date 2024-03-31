@@ -2,7 +2,9 @@ package com.attiead.teacher.domain.service.user
 
 import com.attiead.teacher.common.openfeign.UserClient
 import com.attiead.teacher.domain.service.user.dto.UserDTO
+import org.springframework.stereotype.Service
 
+@Service
 class UserService(
     private val userClient: UserClient
 ) : UserQueryService {
