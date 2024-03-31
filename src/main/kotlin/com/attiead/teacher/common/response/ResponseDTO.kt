@@ -16,7 +16,7 @@ data class ResponseDTO<T>(
 
         fun <T> success(metaCode: MetaCode, data: T? = null): ResponseDTO<T> =
             success(
-                meta = Meta(code = metaCode),
+                meta = Meta(type = metaCode),
                 data = data
             )
 

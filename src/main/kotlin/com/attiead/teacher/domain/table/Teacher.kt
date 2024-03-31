@@ -27,12 +27,15 @@ class Teacher(
     @Column(name = "university")
     val university: String,
 
+    @Column(name = "major")
     @Enumerated(EnumType.STRING)
     val major: Major = Major.ETC,
 
+    @Column(name = "subject")
     @Enumerated(EnumType.STRING)
     val subject: Subject = Subject.ETC,
 
+    @Column(name = "graduate_status")
     @Enumerated(EnumType.STRING)
     val graduateStatus: GraduateStatus = GraduateStatus.GRADUATED,
 
@@ -40,15 +43,16 @@ class Teacher(
     val portfolioFilePath: String? = null,
 
     @Column(name = "introduce")
-    val introduce: String? = null,
+    val introduceContents: String? = null,
 
     @Column(name = "career")
-    val career: Int = 0,
+    val yearsOfCareer: Int = 0,
 
+    @Column(name = "location")
     @Enumerated(EnumType.STRING)
     val location: Location = Location.SEOUL,
 
     @Column(name = "percent_of_completion")
-    val percentOfCompletion: Int = 0,
+    var percentOfCompletion: Int = 6,
 
 ) : BaseEntity()
