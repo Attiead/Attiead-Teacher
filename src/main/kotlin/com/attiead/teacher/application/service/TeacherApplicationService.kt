@@ -3,7 +3,7 @@ package com.attiead.teacher.application.service
 import com.attiead.teacher.application.dto.RequestCreateTeacherDTO
 import com.attiead.teacher.common.mapper.TeacherEntityMapper
 import com.attiead.teacher.common.openfeign.UserClient
-import com.attiead.teacher.domain.service.TeacherCrudService
+import com.attiead.teacher.domain.service.teacher.TeacherCrudService
 import org.springframework.stereotype.Service
 
 @Service
