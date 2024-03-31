@@ -8,7 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestHeader
 
-@FeignClient(value = "user", url = "\${external-api.user.url}")
+@FeignClient(
+    value = "user",
+    url = "\${external-api.user.url}",
+    configuration = [DefaultConfiguration::class]
+)
 interface UserClient {
 
     @GetMapping("/api/v1/users/{uid}")
